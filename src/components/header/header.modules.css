@@ -1,0 +1,8 @@
+.header{
+    background-color:indigo;
+    margin-bottom: 10px;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
