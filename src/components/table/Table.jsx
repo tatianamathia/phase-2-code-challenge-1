@@ -1,11 +1,10 @@
- import React, {useState}  from "react";
- import './table.modules.css'
 
+import React from "react";
+import './table.modules.css'; // Import your CSS file (if applicable)
 
 function Table() {
-    
-    
-         
+  
+
 
     return (
       <table>

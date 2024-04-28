@@ -5,6 +5,7 @@ function Search() {
     const [searchTerm, setSearchTerm] = useState("");
     const handleInputChange = (event) => {
         setSearchTerm(event.target.value);
+        
       };
   return (
     <div>
@@ -13,6 +14,7 @@ function Search() {
         type="text"
         placeholder="Search your Recent Transaction"
         value={searchTerm}  
+        onChange={handleInputChange}
 
       />
     </div>

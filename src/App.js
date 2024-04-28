@@ -16,10 +16,7 @@ function App() {
         >
         </a>
       </header>
-      <div>
-      <Search onSearch={handleSearch} /> {/* Optional prop for future expansion */}
-      <Table />
-      </div>
+      
 
       <Header />
       <Search />
