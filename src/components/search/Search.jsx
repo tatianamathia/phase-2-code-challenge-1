@@ -1,21 +1,22 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./search.modules.css";
 
-function Search() {
-    const [searchTerm, setSearchTerm] = useState("");
-    const handleInputChange = (event) => {
-        setSearchTerm(event.target.value);
-        
-      };
+function Search({ transactions, onFilter }) {
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleInputChange = (event) => {
+    if (typeof event.target.value === "string") {
+      setSearchTerm(event.target.value.toLowerCase());
+    } else {
+    }
+  };
   return (
     <div>
       <input
         className="search"
         type="text"
         placeholder="Search your Recent Transaction"
-        value={searchTerm}  
+        value={searchTerm}
         onChange={handleInputChange}
-
       />
     </div>
   );
